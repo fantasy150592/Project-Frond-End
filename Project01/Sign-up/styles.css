@@ -1,10 +1,21 @@
-* {
+body {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
     text-align: center;
+    background-color: #a9d7d1;
 }
 
-.title {
-    text-align: center;
+.register {
+    background-color: white;
+    width: 500px;
+    height: 800px;
+    border-radius: 10px;
+    display: inline-table;
+    position: relative;
+    list-style: none;
+}
+
+ul {
+    float: left;
 }
