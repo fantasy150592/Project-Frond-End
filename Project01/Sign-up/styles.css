@@ -3,8 +3,7 @@ body {
     padding: 0px;
     font-family: sans-serif;
     background-color: #a9d7d1;
-    background-size: cover;
-    background-position: center;
+    text-align: center;
 }
 
 .register {
