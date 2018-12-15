@@ -13,7 +13,8 @@ body {
     border-radius: 10px;
     display: inline-table;
     position: relative;
-    list-style: none;
 }
 
-ul {}
+ul {
+    list-style: none;
+}
