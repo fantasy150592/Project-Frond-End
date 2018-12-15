@@ -2,8 +2,9 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    text-align: center;
     background-color: #a9d7d1;
+    background-size: cover;
+    background-position: center;
 }
 
 .register {
