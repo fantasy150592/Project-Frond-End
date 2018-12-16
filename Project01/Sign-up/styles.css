@@ -1,10 +1,20 @@
-* {
+body {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+    background-color: #a9d7d1;
     text-align: center;
 }
 
-.title {
-    text-align: center;
+.register {
+    background-color: white;
+    width: 500px;
+    height: 800px;
+    border-radius: 10px;
+    display: inline-table;
+    position: relative;
+}
+
+ul {
+    list-style: none;
 }
