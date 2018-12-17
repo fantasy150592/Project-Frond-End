@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <div id="title">
         <h3>Form Đăng Ký</h3>
     </div>
@@ -18,7 +19,7 @@
     </div>
     <!--bang dang ky-->
     <div class="register">
-        <form action="" method="POST">
+        <form action="" method="GET">
             <ul>
                 <li><label for="firstname">First Name:</label></li>
                 <li><input type="text" placeholder="First Name"></li>
@@ -53,7 +54,11 @@
 
                 <!--So dien thoai-->
                 <li><label for="num">Phone Number:</label></li>
-                <li><select name="" id=""></select></li>
+                <li><select name="phone" id="number">
+                    <option value="84">+84</option><option value="83">+83</option><option value="82">+82</option><option value="81">+81</option>
+                </select>
+                    <input type="text" placeholder="Number">
+                </li>
 
                 <li><label for="password">PassWord</label></li>
                 <li><input type="password" placeholder="PassWord" /></li>
@@ -61,17 +66,32 @@
                 <li><label for="password">Vui long nhap lai</label></li>
                 <li><input type="password" placeholder="Confirm PassWord" /></li>
 
-                <li><label for="">Tuy chon trinh do</label></li>
-                <ul><select name="" id=""></select></ul>
+                <li><label for="">Nghề Nghiệp</label></li>
+                <ul><select name="" id="">
+                    <option value="">Vui lòng chọn 1</option><option value="sinhvien">Sinh viên</option><option value="laptrinhvien">Lập trình viên</option><option value="vanphong">Nhân viên văn phòng</option><option value="kysu">Kỹ sư</option>
+                </select></ul>
 
             </ul>
-            <input type="button" value="Sign Up" />
+            <label for="">Bạn thích môn thể thao nào?</label>
+
+
+            <ul><input type="radio" /> Bóng rổ<br/></ul>
+            <ul><input type="radio" /> Bóng đá<br/></ul>
+            <ul><input type="radio" /> Bóng chuyền<br/></ul>
+            <label for="">Bạn thích thể loại phim thế nào</label>
+            <input type="checkbox" name="hanhdong" id=" ">Hành động<br/>
+            <input type="checkbox" name="kiemhiep" id=" ">Kiếm hiệp<br/>
+            <input type="checkbox" name="hoathinh" id=" ">Hoạt hình<br/>
+            <input type="checkbox" name="kinhdi" id=" ">Kinh dị<br/>
+            <input type="checkbox" name="haihuoc" id=" ">Hài hước<br/>
+            <input type="checkbox" name="phieuluu" id=" ">Phiêu lưu<br/>
+            <label for="">Thể loại khác</label>
+            <textarea style="height: 50px;resize: vertical" placeholder="Thêm 1 số thê loại khác">
+                </textarea>
+
+            <input type="submit" value="Sign Up " />
         </form>
     </div>
 </body>
-
-</html>
-
-</html>
 
 </html>

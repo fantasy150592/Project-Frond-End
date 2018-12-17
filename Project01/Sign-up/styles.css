@@ -13,18 +13,46 @@ body {
 
 .register {
     background-color: white;
-    width: 500px;
-    height: 800px;
+    width: 400px;
+    height: 100%;
     border-radius: 10px;
-    display: inline-table;
-    position: fixed;
+    display: inline-block;
     padding: 40px 10px;
     box-sizing: border-box;
-    transform: translate(50%);
-    left: 23%;
-    top: 10%;
 }
 
 ul {
     list-style: none;
+}
+
+input {
+    width: 50%;
+    background: none;
+    border: 5px, solid sfff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+select {
+    border: 5px, solid sfff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background: rgb(106, 96, 244);
+}
+
+input[type="submit"]:hover {
+    background: rgb(102, 255, 0);
+}
+
+input[type="radio"],
+[type="checkbox"] {
+    text-align: center;
+    position: relative;
+    left: -43px;
 }
