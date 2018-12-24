@@ -1,15 +1,10 @@
-var AVG_TEMPERATURES = {
-    today: 77.5,
-    tomorrow: 79
-};
+a = 5;
+b = 6;
+
+function abc(c = a + b)
 
 
 
-// change code below this line
-let { tomorrow: tempOfTomorrow } = AVG_TEMPERATURES; // change this line
-// change code above this line
-return tempOfTomorrow;
+console.log(abc);
 
-
-console.log(
-    tempOfTomorrow); // should be 79
+// should be 79

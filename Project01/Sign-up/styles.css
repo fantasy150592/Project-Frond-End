@@ -1,58 +1,146 @@
 * {
-    margin: 10px;
-    padding: 0px;
-    top: 10px;
-    ;
+    box-sizing: border-box;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+html,
 body {
-    font-family: sans-serif;
-    background-color: #a9d7d1;
+    margin: 0px;
+    padding: 1em;
+    background-color: #92bde7;
+    color: #485e74;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+    min-width: 320px;
+}
+
+.container {
+    max-width: 900px;
+    padding: 5em;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 75%;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.brand {
     text-align: center;
 }
 
-.register-form {
-    background-color: white;
-    width: 500px;
-    height: 100%;
-    border-radius: 10px;
+.wrapper {
+    box-shadow: 0 0 20px 1em rgba(72, 94, 116, 1);
+}
+
+.wrapper>* {
+    padding: 1em;
+}
+
+.info {
+    background: #c9e6ff;
+}
+
+.info h3 {
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.contact {
+    background: #f9feff;
+}
+
+
+/* FORM STYLES*/
+
+.labels {
     display: inline-block;
-    padding: 40px 10px;
-    box-sizing: border-box;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
 }
 
-ul {
-    list-style: none;
+.contact form label {
+    display: block;
 }
 
-input {
+.contact form p {
+    margin: 0px;
+    height: auto;
+}
+
+.contact form input {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid;
+}
+
+.contact form .ph {
+    width: 78%;
+    padding: 1em;
+    border: 1px solid;
+}
+
+.contact form .select {
+    width: 21%;
+    padding: 1em;
+    margin: 2px;
+    border: 1px solid;
+}
+
+.contact form .select-nghe {
+    width: 40%;
+    padding: 1em;
+    border: 1px solid;
+}
+
+.contact form textarea {
     width: 50%;
-    background: none;
-    border: 5px, solid sfff;
-    border-radius: 3px;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+    padding: 1em;
+    border: 1px solid;
 }
 
-select {
-    border: 5px, solid sfff;
-    border-radius: 3px;
-    padding: 5px 10px;
-    box-sizing: border-box;
+.contact form button {
+    background: #c9e6ff;
+    border: 0px;
+    text-transform: uppercase;
+    width: 45%;
+    padding: 1em;
+    border: 1px solid;
 }
 
-input[type="submit"] {
-    background: rgb(106, 96, 244);
-}
-
-input[type="submit"]:hover {
-    background: rgb(102, 255, 0);
-}
-
-input[type="radio"],
-[type="checkbox"] {
-    text-align: center;
+.radio,
+.checkbox {
     position: relative;
     left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s case-out;
+}
+
+@media(min-width: 700px) {
+    .contact form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .contact>* {
+        padding: 2em;
+    }
 }
