@@ -19,6 +19,7 @@
             </div>
             <div class="contact">
                 <form>
+
                     <p>
                         <label for="firstname">First Name:<br/></label>
                         <input type="text" name="fname" id="button" placeholder="First Name">
@@ -91,11 +92,7 @@
 
                             <label>Bóng chuyền<input name="radio-buttons" type= "radio" value="3" class="userRatings"></label>
                         </div>
-                        <div class="full-text">
-                            <label>Thể loại khác:</label>
-                            <textarea name="messsage" rows="2" placeholder="Thêm 1 số thê loại khác">
-                                        </textarea>
-                        </div>
+
                     </div>
                     <div class="row">
                         <div class="labels">
@@ -103,19 +100,24 @@
                         </div>
                         <div>
                             <ul style="list-style: none;">
-                                <li><label>Hành động<input type="checkbox" name="hanhdong" class="userRatings"><br/></label></li>
-                                <li><label for="">Kiếm hiệp<input type="checkbox" name="kiemhiep" class="userRatings"><br/></label></li>
-                                <li><label for="">Hoạt hình<input type="checkbox" name="hoathinh" class="userRatings"><br/></label></li>
-                                <li><label for="">Kinh dị<input type="checkbox" name="kinhdi" class="userRatings"><br/></label></li>
-                                <li><label for="">Hài hước<input type="checkbox" name="haihuoc" class="userRatings"><br/></label></li>
-                                <li><label for="">Phiêu lưu<input type="checkbox" name="phieuluu" class="userRatings"><br/></label></li>
+                                <li class="checkbox"><label>Hành động<input type="checkbox" name="hanhdong" class="userRatings"><br/></label></li>
+                                <li class="checkbox"><label for="">Kiếm hiệp<input type="checkbox" name="kiemhiep" class="userRatings"><br/></label></li>
+                                <li class="checkbox"><label for="">Hoạt hình<input type="checkbox" name="hoathinh" class="userRatings"><br/></label></li>
+                                <li class="checkbox"><label for="">Kinh dị<input type="checkbox" name="kinhdi" class="userRatings"><br/></label></li>
+                                <li class="checkbox"><label for="">Hài hước<input type="checkbox" name="haihuoc" class="userRatings"><br/></label></li>
+                                <li class="checkbox"><label for="">Phiêu lưu<input type="checkbox" name="phieuluu" class="userRatings"><br/></label></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="full">
-                        <button>Submit</button>
+                    <div>
+                        <div class="full-text">
+                            <label>Thể loại khác:</label></div>
+                        <div>
+                            <textarea name="messsage" rows="2" placeholder="Thêm 1 số thê loại khác">
+                        </textarea>
+                        </div>
                     </div>
-
+                    <button class="submit">Submit</button>
                 </form>
             </div>
         </div>

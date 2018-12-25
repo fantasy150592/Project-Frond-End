@@ -20,7 +20,7 @@ body {
     padding: 5em;
     margin: 0 auto;
     border-radius: 4px;
-    width: 75%;
+    width: 95%;
     padding: 10px;
     padding-top: 20px;
 }
@@ -43,7 +43,7 @@ body {
 
 .info h3 {
     text-align: center;
-    margin: 1rem 0 1rem 0;
+    margin: 0;
 }
 
 .contact {
@@ -56,7 +56,6 @@ body {
 .labels {
     display: inline-block;
     text-align: right;
-    width: 40%;
     padding: 5px;
     vertical-align: top;
     margin-top: 10px;
@@ -78,20 +77,20 @@ body {
 }
 
 .contact form .ph {
-    width: 78%;
+    width: 75%;
     padding: 1em;
     border: 1px solid;
 }
 
 .contact form .select {
-    width: 21%;
+    width: 19%;
     padding: 1em;
     margin: 2px;
     border: 1px solid;
 }
 
 .contact form .select-nghe {
-    width: 40%;
+    width: 35%;
     padding: 1em;
     border: 1px solid;
 }
@@ -126,15 +125,20 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-.contact form button:hover,
-.contact form button:focus {
+.submit {
+    text-align: center;
+    width: 100%;
+}
+
+.submit:hover,
+.submit:focus {
     background: #92bde7;
     color: #fff;
     outline: 0;
     transition: background-color 2s case-out;
 }
 
-@media(min-width: 700px) {
+@media(min-width: 833px) {
     .contact form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
