@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 #banner {
     min-height: 90vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Project03/images/advice-advise-advisor-7096.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/advice-advise-advisor-7096.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -188,9 +188,12 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+
+/*services*/
+
 #services {
     min-height: 100vh;
-    background: url(/Project03/images/aerial-android-wallpaper-architectural-design-373912.jpg);
+    background: url(./images/aerial-android-wallpaper-architectural-design-373912.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -202,4 +205,187 @@ nav ul li a:hover {
     max-width: 90vw;
     margin: 0 auto;
     color: #e0e2db;
+}
+
+.service-item {
+    overflow: hidden;
+    position: relative;
+    padding: 60px;
+}
+
+.service-item .fa {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #e6af2e;
+}
+
+.service-item-black {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.service-item-white {
+    background: linear-gradient(rgba(206, 208, 206, 0.4), rgba(206, 208, 206, 0.4));
+    color: #191716;
+}
+
+.front-text {
+    text-align: center;
+    transition: transform 2s;
+}
+
+.back-text {
+    position: absolute;
+    bottom: -15em;
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    transition: bottom 2s;
+    padding: 30px 0;
+}
+
+.back-text h1 {
+    margin-bottom: 20px;
+}
+
+.back-text button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    color: #e6af2e;
+    font-size: 20px;
+    border: 2px solid #e6af2e;
+}
+
+.back-text button:hover {
+    background-color: #e6af2e;
+    color: #191716;
+}
+
+.service-item-white button {
+    background-color: #e6af2e;
+    color: #191716;
+}
+
+.service-item-white button:hover {
+    background-color: #191716;
+    border: #191716;
+    color: #e6af2e;
+}
+
+.service-item:hover .front-text {
+    transform: translateY(-200px);
+}
+
+.service-item:hover .back-text {
+    bottom: 0;
+}
+
+@media screen and (min-width: 776px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-item:nth-of-type(1) {
+        order: 1
+    }
+    .service-item:nth-of-type(2) {
+        order: 2
+    }
+    .service-item:nth-of-type(3) {
+        order: 4
+    }
+    .service-item:nth-of-type(4) {
+        order: 3
+    }
+}
+
+
+/*############## Projects ###########*/
+
+#projects .title-text {
+    color: #191716;
+}
+
+#projects {
+    padding: 20px 0 80px 0;
+    background-color: #e0e2db;
+}
+
+.projects-container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.projects-item {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    color: #e0e2db;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#projects img {
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 4s;
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+.img-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: #e6af2e;
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+.img-text h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.img-text h6 {
+    font-size: 15px;
+}
+
+.projects-item:hover img {
+    opacity: 0.4;
+    transform: scale(1.3);
+}
+
+.projects-item:hover .img-text,
+.projects-item:hover .img-footer {
+    opacity: 1;
+}
+
+@media screen and (min-width: 576px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1em;
+    }
 }
