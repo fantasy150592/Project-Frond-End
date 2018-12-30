@@ -20,16 +20,15 @@ body {
     background-color: wheat;
 }
 
-
-/*.clearfix:before,
+.clearfix:before,
 .clearfix:after {
-    content: '';
+    content: "";
     display: table;
 }
 
 .clearfix:after {
     clear: both;
-}*/
+}
 
 h1 {
     font-size: 3em;
@@ -41,6 +40,9 @@ h2 {
     text-transform: uppercase;
     padding: 0.5em;
 }
+
+
+/*#############nav#############*/
 
 nav ul {
     list-style-type: none;
@@ -79,21 +81,161 @@ nav ul li a:hover:not(.active) {
     border-radius: 0.5em;
 }
 
+
+/*#####################header##################*/
+
+header {
+    background-image: url(./images/beans-brown-coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 3em;
+    text-align: center;
+    color: white;
+    border: 3px solid chocolate;
+}
+
+header h1 {
+    font-size: 6em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+header p {
+    margin-top: 1em;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+a.btn {
+    padding: 2em;
+    margin: 1em;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    background: #e0e2db;
+    border-radius: 2em;
+    text-decoration: none;
+    border: 2px solid #e1417e;
+}
+
+a.btn:hover {
+    background-color: black;
+    color: #e0e2db;
+    border: 3px solid #e6af2e;
+}
+
+
+/*blockquote*/
+
+blockquote {
+    padding: 1em;
+    background-color: khaki;
+    font-size: 2em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+
+/*#############main###################*/
+
+.titles {
+    padding: 1em;
+    line-height: 3em;
+    text-align: center;
+    background-color: chocolate;
+    text-transform: capitalize;
+}
+
+.main-articles {
+    margin: 2em;
+}
+
+.main-articles .articles {
+    text-align: center;
+}
+
+.articles p {
+    text-align: justify;
+    line-height: 2em;
+}
+
+.articles img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/*######## icons #######*/
+
+.red {
+    color: red;
+    line-height: 2em;
+}
+
+.black {
+    color: black;
+}
+
+
+/*##### footer ##########*/
+
+#second {
+    padding: 2em;
+    line-height: 3.5em;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    background-color: chocolate;
+    text-shadow: 0.2em 0.2em black;
+    border-radius: 0.5em;
+}
+
+@media screen and (min-width:200px) {
+    .small .articles {
+        float: left;
+        width: 31.42857142857143%;
+        margin-right: 2.85714285714286%;
+    }
+    .small .articles:last-child {
+        margin-right: 0;
+    }
+    .small .articles h2 {
+        font-size: 1.3em;
+    }
+}
+
 @media screen and (min-width: 600px) {
     nav ul li {
         display: inline-block;
-        width: 8em;
+        width: 7em;
         align-items: center;
     }
     nav {
         background-color: #555555;
+    }
+    .articles {
+        float: left;
+        width: 31.42857142857143%;
+        margin-right: 2.85714285714286%;
+    }
+    .articles:last-child {
+        margin-right: 0;
+    }
+    .articles img {
+        height: 23em;
+    }
+    .articles p {
+        height: 22em;
+        overflow: hidden;
     }
 }
 
 @media screen and (min-width: 996px) {
     nav ul li {
         display: inline-block;
-        width: 12em;
+        width: 14em;
         align-items: center;
     }
     nav {
