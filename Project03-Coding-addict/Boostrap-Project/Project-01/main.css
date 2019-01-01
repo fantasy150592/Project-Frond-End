@@ -1,0 +1,13 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.max-viewport {
+    min-height: 100vh;
+}
+
+.text-underline {
+    width: 100px;
+    border: 1px solid #ffd282;
+    margin: 0 auto;
+}
