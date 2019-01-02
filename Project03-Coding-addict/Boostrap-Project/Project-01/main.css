@@ -1,3 +1,9 @@
+/* Yellow #f5ed12b
+ocean blue #067bc2
+darkblue #84bcda
+mandarin #f37748
+indian red #d56062 */
+
 body {
     font-family: 'Roboto Slab', serif;
 }
@@ -10,4 +16,12 @@ body {
     width: 100px;
     border: 1px solid #ffd282;
     margin: 0 auto;
+}
+
+.about-image {
+    background: url(./images/julien-r-1265218-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
