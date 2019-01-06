@@ -18,7 +18,8 @@ body {
     margin: 0 auto;
 }
 
-.about-image {
+.about-image,
+#filler {
     background: url(./images/julien-r-1265218-unsplash.jpg);
     background-attachment: fixed;
     background-position: center;
