@@ -1,3 +1,39 @@
-body {
-    margin-top: 50px;
-}
+ /* apricot: #FFCAB2
+ old burgundy: #4A3130
+ pale taupe: #B49082
+ cardinal: #C5283D */
+ 
+ body {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .max-height {
+     min-height: 100vh;
+ }
+ 
+ .message-container {
+     background: whitesmoke;
+ }
+ 
+ .message-content {
+     color: #C5283D;
+ }
+ 
+ #submitBtn {
+     background: #FFCAB2;
+     color: white;
+ }
+ 
+ #submitBtn:hove {
+     background: whitesmoke;
+     color: #C5283D;
+ }
+ 
+ .feedback {
+     display: none;
+ }
+ 
+ .show {
+     display: block;
+ }

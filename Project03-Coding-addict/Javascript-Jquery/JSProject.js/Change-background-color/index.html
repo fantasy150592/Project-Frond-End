@@ -21,9 +21,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row max-height align-items-center text-center">
-            <div class="col-10 col-6 mx-auto text-center">
+    <!-- Change background color  -->
+    <div class="container" id="change-background">
+        <div class="row max-height align-items-center">
+            <div class="col-sm-12 text-center">
                 <h1>HEX COLOR: <span id="hex-value"></span></h1>
 
                 <a href="#" id="btn" class="btn btn-outline-warning my-2">
@@ -32,6 +33,43 @@
             </div>
         </div>
     </div>
+    <hr>
+    <!-- End of change background color  -->
+
+    <!-- Random quote -->
+    <div class="container">
+        <div class="row max-height align-items-center">
+            <div class="col-sm-12 quote-container p-5 text-center">
+                <button type="button" class="btn btn-outline-primary my-4 d-block mx-auto" id="generate-btn">GENERATE QUOTE</button>
+                <h3 class="text-muted"><span class="quote-icon mr-3"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+                    <span id="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, delectus tenetur. Commodi delectus libero unde?</span>
+                </h3>
+
+                <h5 class="text-right text-capitalize author">-<span class="quote-author ml-3">author</span></h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of random quote -->
+    <hr>
+    <!-- Pass the message -->
+    <div class="container">
+        <div class="row max-height align-items-center">
+            <div class="col-10 col-md-8 mx-auto message-container text-center p-3">
+                <h4 class="text-capitalize">A message you would like to pass</h4>
+                <form action="" id="message-form">
+                    <input type="text" id="message" class="w-100 my-3 p-2">
+                    <input type="submit" id="submitBtn" class="btn btn-lg">
+                </form>
+                <h5 class="alert alert-danger my-5 feedback p-2 text-capitalize">Please enter the value to pass</h5>
+                <h4 class="text-capitalize my-3">last message delivered</h4>
+                <h4 class="text-uppercase message-content">Helloword</h4>
+            </div>
+        </div>
+    </div>
+
+    <!--End of pass the message -->
+
     <!-- app.js -->
     <script src="./app.js"></script>
 
