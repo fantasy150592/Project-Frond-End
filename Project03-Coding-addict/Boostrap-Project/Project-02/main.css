@@ -1,0 +1,45 @@
+.btn-colors {
+    color: yellow;
+}
+
+.btn-outline-success:hover {
+    color: red;
+}
+
+.fa-bars {
+    color: white;
+}
+
+#banner .jumbotron {
+    padding: 150px 0;
+    text-align: center;
+    background: gray url(./images/adventure-background-header.jpg) center no-repeat;
+    background-image: cover;
+    margin-bottom: 0;
+}
+
+#banner .jumbotron .content {
+    color: white;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 2);
+}
+
+#banner .jumbotron .btn.btn-primary.btn-lg:hover {
+    background: white;
+    color: black;
+    border: 2px solid red;
+    text-shadow: none;
+}
+
+#feature {
+    text-align: center;
+}
+
+#feature2 {
+    background-color: #636e72;
+    color: white;
+}
+
+#feature,
+#feature2 {
+    padding: 30px 0;
+}
