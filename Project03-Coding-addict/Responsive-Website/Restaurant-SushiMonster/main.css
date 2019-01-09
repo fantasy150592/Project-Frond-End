@@ -1,0 +1,16 @@
+body {
+  font-family: "Mr Dafoe", cursive;
+}
+
+.info {
+  background: #c9c1ac;
+}
+.info h2 {
+  word-spacing: 0.6rem;
+}
+
+.primary-color {
+  color: #d3325f;
+}
+
+/*# sourceMappingURL=main.css.map */

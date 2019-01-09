@@ -1,0 +1,16 @@
+body {
+    font-family: 'Mr Dafoe', cursive;
+}
+
+$white: #c9c1ac;
+$red: #d3325f;
+.info {
+    background: $white;
+    h2 {
+        word-spacing: 0.6rem;
+    }
+}
+
+.primary-color {
+    color: $red;
+}
